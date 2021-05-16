@@ -1,0 +1,450 @@
+/*
+Theme Name: Theme ACF chevillon
+Author: L.Chevillon
+Description: Thème réalisé a l'aide du plugin ACF
+Requires at least: 4.9.6
+Requires PHP: 5.2.4
+Version: 2.0
+License: tous droits réservés
+Text Domain: Theme ACF chevillon
+*/
+
+body,
+html {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+// FONT FAMILY
+* {
+  font-family: "Bebas Neue", cursive;
+  color: white;
+}
+
+.container {
+  max-width: 100% !important;
+  padding: 0 !important;
+
+  // .HOME
+  #home {
+    .backgroundImage {
+      background: linear-gradient(
+          rgba(55, 55, 71, 0.658),
+          rgba(53, 55, 73, 0.63)
+        ),
+        url("./assets/images/homebackground.png") no-repeat center center;
+      background-size: cover;
+      background-position: center;
+      height: 120vh;
+      width: 100%;
+      opacity: 10;
+      #homeContainer {
+        display: flex;
+        flex-direction: column;
+        width: min-content;
+        margin: auto;
+        padding-top: 25vh;
+        #boxTitleHome {
+          #titleHome {
+            color: white;
+            width: 25vh;
+            margin: auto;
+            border: solid 2px;
+            font-size: 65px;
+            padding: 10px;
+            padding-left: 21px;
+          }
+        }
+        #subtitleHome {
+          color: white;
+          width: 25vh;
+          margin: auto;
+          border-bottom: solid 2px;
+          font-size: 45px;
+          padding: 10px;
+          padding-left: 21px;
+        }
+      }
+      nav {
+        #containerNav {
+          padding-top: 35px;
+          padding-left: 45px;
+          display: flex;
+          justify-content: space-between;
+          #logo {
+          }
+          #link {
+            a {
+              color: white !important;
+              text-decoration: none;
+              padding-right: 40px;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // .OUR FOOD
+  #ourFood {
+    .backgroundColor {
+      height: 120vh;
+      width: 100%;
+      background-color: #43363a;
+      #ourFoodContainer {
+        margin: auto;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        #titleOurFood {
+          color: white;
+          h2 {
+            font-size: 45px;
+            margin-bottom: 80px;
+          }
+        }
+        #ourFoodImages {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          .foodImages {
+            height: 73vh;
+            width: 47vh;
+            background-size: cover;
+            #blockInImages {
+              color: white;
+              width: 57%;
+              height: 34%;
+              margin: auto;
+              margin-top: 26vh;
+              box-shadow: 0.5rem -0.5rem 2rem #000000cc;
+              .blockTitle {
+                width: min-content;
+                padding-top: 60px;
+                padding-left: 10px;
+                h4 {
+                  font-size: 35px;
+                }
+              }
+              .blockSubtitle {
+                h5 {
+                  font-size: 15px;
+                  padding-left: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #ourRestaurant {
+    #ourRestaurantBackground {
+      margin: auto;
+      width: 90%;
+      background: linear-gradient(
+          rgba(55, 55, 71, 0.658),
+          rgba(53, 55, 73, 0.63)
+        ),
+        url("./assets/images/peopleBackground.png") no-repeat center center;
+      background-size: cover;
+      background-position: center;
+      height: 120vh;
+      width: 100%;
+      opacity: 10;
+      #containerRestaurant {
+        width: 70%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        #leftOurRestaurant {
+          width: 35%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          h4 {
+            font-size: 45px;
+          }
+          p {
+            font-size: 14px;
+          }
+          #blockOurRestaurant {
+            #blockOurRestaurantTitle {
+            }
+            #blockOurRestaurantText {
+              p {
+                font-family: "Lato", sans-serif;
+              }
+            }
+          }
+          #blockOurPeople {
+            margin-top: 30px;
+            #blockOurPeopleTitle {
+            }
+            .people {
+              display: flex;
+              align-items: center;
+              p {
+                margin-left: 30px;
+                width: 300px;
+                width: 37vh;
+                font-family: "Lato", sans-serif;
+              }
+              img {
+                height: 80px;
+              }
+            }
+            hr {
+              background-color: rgb(255, 255, 255) !important;
+              border: none;
+              opacity: 100%;
+            }
+            hr:last-child {
+              display: none;
+            }
+          }
+        }
+        #rightOurRestaurant {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          justify-content: space-evenly;
+          .imageOurRestaurant {
+            width: 80vh;
+            height: 330px;
+          }
+        }
+      }
+    }
+  }
+  #ourValue {
+    #ourValueBackground {
+      background: linear-gradient(
+          rgba(75, 75, 85, 0.39),
+          rgba(85, 87, 100, 0.336)
+        ),
+        url("./assets/images/baker.png") no-repeat center center;
+      background-size: cover;
+      background-position: center;
+      height: 120vh;
+      width: 100%;
+
+      p {
+        font-family: "Lato", sans-serif;
+        line-height: 40px;
+      }
+      h4 {
+        font-size: 130px;
+      }
+      h6 {
+        font-size: 30px;
+      }
+      #containerOurValue {
+        width: 75%;
+        margin: auto;
+        padding-top: 90px;
+        #ourValueBlock {
+          width: 44%;
+          .ourValueSubtitle {
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+  }
+  #informations {
+    height: 60vh;
+    background-color: #43363a;
+    #informationsContainer {
+      width: 60%;
+      height: 100%;
+      margin: auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-content: space-evenly;
+      h4 {
+        font-size: 45px;
+      }
+      #textInformation {
+        p {
+          font-family: "Lato", sans-serif;
+          width: 65%;
+          margin: auto;
+        }
+      }
+      #reservationInformation {
+        p {
+          font-size: 25px;
+          letter-spacing: 3px;
+          font-family: "Lato", sans-serif;
+        }
+        #number {
+          font-size: 30px;
+        }
+        #book {
+          font-size: 30px;
+          border: 2px solid white;
+          padding: 10px;
+        }
+      }
+    }
+
+    #sign {
+      display: flex;
+      margin-bottom: 80px;
+      #leftVisit {
+        width: 22%;
+        background-color: #85993c;
+        margin-top: 70px;
+        margin-left: 8%;
+        p {
+          font-family: "Lato", sans-serif;
+        }
+        #visitContainer {
+          width: 41%;
+          margin-left: 50px;
+          margin-top: 40px;
+          h5 {
+            font-size: 45px;
+          }
+        }
+      }
+      #rightVisit {
+        width: 0;
+        height: 0;
+        border-top: 150px solid transparent;
+        border-bottom: 150px solid transparent;
+        border-left: 35px solid #85993c;
+        margin-top: 70px;
+      }
+    }
+
+    #googleMap {
+      position: absolute;
+      z-index: -1000;
+      width: 100%;
+    }
+    #menuFooter {
+      #backgroundMenuFooter {
+        width: 100%;
+        height: 300px;
+        background-color: #dc5352;
+        #containerMenuFooter {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 100%;
+          width: 75%;
+          margin: auto;
+          h6 {
+            color: white;
+            width: 25vh;
+            border: solid 2px;
+            font-size: 65px;
+            padding: 10px;
+            padding-left: 21px;
+          }
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+    footer {
+      box-shadow: 0px -18px 100px #000000b5;
+      height: 80px;
+      width: 100%;
+      background-color: #47383b;
+      #containerFooter {
+        display: flex;
+        height: 100%;
+        width: 50%;
+        margin: auto;
+        justify-content: space-evenly;
+        align-items: center;
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #containerNav {
+    padding-left: 10px !important;
+    padding-top: 10px !important;
+    #link {
+      display: none;
+    }
+  }
+  .backgroundColor {
+    height: 250vh !important;
+    #titleOurFood {
+      height: 10vh;
+      text-align: center;
+    }
+    .foodImages {
+      margin-bottom: 20px;
+    }
+    #ourFoodContainer {
+      width: 50% !important;
+    }
+  }
+  #ourRestaurantBackground {
+    height: 185vh !important;
+    background: none !important;
+    background-color: rgb(88, 88, 88) !important;
+  }
+  #containerRestaurant {
+    display: block !important;
+    padding-top: 30px !important;
+    #leftOurRestaurant {
+      width: 100% !important;
+      text-align: center !important;
+      p {
+        width: 100% !important;
+      }
+    }
+    .imageOurRestaurant {
+      width: 63vh !important;
+      margin-bottom: 30px !important;
+      margin-top: 30px !important;
+    }
+    #rightOurRestaurant {
+      align-items: center !important;
+    }
+  }
+
+  #ourValueBlock {
+    width: 100% !important;
+    text-align: center;
+    p {
+      font-size: 30px !important;
+    }
+  }
+  #sign {
+    margin-bottom: 0 !important;
+    #leftVisit {
+      height: 30vh !important;
+      margin-bottom: 134px !important;
+      #visitContainer {
+        margin-left: 10px !important;
+        margin-top: 10px !important;
+        width: 100% !important;
+      }
+    }
+    #rightVisit {
+      border-top: 123px solid transparent !important;
+      border-bottom: 123px solid transparent !important;
+    }
+  }
+}
